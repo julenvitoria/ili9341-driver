@@ -1,0 +1,10 @@
+# ***fbcp-ili9341.service***
+[Unit]
+Description=servicio para la copia del framebuffer para pantalla SPI ILI9341
+ 
+[Service]
+ExecStart=/usr/local/bin/fbcp
+User=root
+
+[Install]
+WantedBy=multi-user.target
